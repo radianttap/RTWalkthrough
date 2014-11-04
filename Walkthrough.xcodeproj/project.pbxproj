@@ -13,18 +13,19 @@
 		D062030A1A07BD82001222A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06203081A07BD82001222A9 /* Main.storyboard */; };
 		D062030C1A07BD82001222A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D062030B1A07BD82001222A9 /* Images.xcassets */; };
 		D062030F1A07BD82001222A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D062030D1A07BD82001222A9 /* LaunchScreen.xib */; };
-		D062031B1A07BD82001222A9 /* WalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D062031A1A07BD82001222A9 /* WalkthroughTests.m */; };
+		D06203271A07BDF8001222A9 /* RTWalkthroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06203261A07BDF8001222A9 /* RTWalkthroughViewController.m */; };
+		D062032A1A07BE27001222A9 /* RTWalkthroughPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06203291A07BE27001222A9 /* RTWalkthroughPageViewController.m */; };
+		D062032D1A07BEB6001222A9 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D062032B1A07BEB6001222A9 /* Walkthrough.storyboard */; };
+		D06203381A07BEE2001222A9 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D062032F1A07BEE2001222A9 /* bg@2x.jpg */; };
+		D06203391A07BEE2001222A9 /* img3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203301A07BEE2001222A9 /* img3@2x.png */; };
+		D062033A1A07BEE2001222A9 /* iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203311A07BEE2001222A9 /* iPhone@2x.png */; };
+		D062033B1A07BEE2001222A9 /* leftarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203321A07BEE2001222A9 /* leftarrow@2x.png */; };
+		D062033C1A07BEE2001222A9 /* rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203331A07BEE2001222A9 /* rightarrow@2x.png */; };
+		D062033D1A07BEE2001222A9 /* cloud1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203351A07BEE2001222A9 /* cloud1@2x.png */; };
+		D062033E1A07BEE2001222A9 /* cloud3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203361A07BEE2001222A9 /* cloud3@2x.png */; };
+		D062033F1A07BEE2001222A9 /* iPhoneScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06203371A07BEE2001222A9 /* iPhoneScreen@2x.png */; };
+		D06203421A08ED37001222A9 /* RTCustomPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06203411A08ED37001222A9 /* RTCustomPageViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D06203151A07BD82001222A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D06202F31A07BD82001222A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D06202FA1A07BD82001222A9;
-			remoteInfo = Walkthrough;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D06202FB1A07BD82001222A9 /* Walkthrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkthrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +38,25 @@
 		D06203091A07BD82001222A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D062030B1A07BD82001222A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D062030E1A07BD82001222A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D06203141A07BD82001222A9 /* WalkthroughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkthroughTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D06203191A07BD82001222A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D062031A1A07BD82001222A9 /* WalkthroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalkthroughTests.m; sourceTree = "<group>"; };
+		D06203251A07BDF8001222A9 /* RTWalkthroughViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTWalkthroughViewController.h; sourceTree = "<group>"; };
+		D06203261A07BDF8001222A9 /* RTWalkthroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTWalkthroughViewController.m; sourceTree = "<group>"; };
+		D06203281A07BE27001222A9 /* RTWalkthroughPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTWalkthroughPageViewController.h; sourceTree = "<group>"; };
+		D06203291A07BE27001222A9 /* RTWalkthroughPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTWalkthroughPageViewController.m; sourceTree = "<group>"; };
+		D062032C1A07BEB6001222A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Walkthrough.storyboard; sourceTree = "<group>"; };
+		D062032F1A07BEE2001222A9 /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg@2x.jpg"; sourceTree = "<group>"; };
+		D06203301A07BEE2001222A9 /* img3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img3@2x.png"; sourceTree = "<group>"; };
+		D06203311A07BEE2001222A9 /* iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone@2x.png"; sourceTree = "<group>"; };
+		D06203321A07BEE2001222A9 /* leftarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftarrow@2x.png"; sourceTree = "<group>"; };
+		D06203331A07BEE2001222A9 /* rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightarrow@2x.png"; sourceTree = "<group>"; };
+		D06203351A07BEE2001222A9 /* cloud1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud1@2x.png"; sourceTree = "<group>"; };
+		D06203361A07BEE2001222A9 /* cloud3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud3@2x.png"; sourceTree = "<group>"; };
+		D06203371A07BEE2001222A9 /* iPhoneScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhoneScreen@2x.png"; sourceTree = "<group>"; };
+		D06203401A08ED37001222A9 /* RTCustomPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCustomPageViewController.h; sourceTree = "<group>"; };
+		D06203411A08ED37001222A9 /* RTCustomPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCustomPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D06202F81A07BD82001222A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D06203111A07BD82001222A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,8 +69,8 @@
 		D06202F21A07BD82001222A9 = {
 			isa = PBXGroup;
 			children = (
+				D06203241A07BDCD001222A9 /* RTWalkthrough */,
 				D06202FD1A07BD82001222A9 /* Walkthrough */,
-				D06203171A07BD82001222A9 /* WalkthroughTests */,
 				D06202FC1A07BD82001222A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				D06202FB1A07BD82001222A9 /* Walkthrough.app */,
-				D06203141A07BD82001222A9 /* WalkthroughTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,11 +86,15 @@
 		D06202FD1A07BD82001222A9 /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				D062032E1A07BEC4001222A9 /* assets */,
 				D06203021A07BD82001222A9 /* AppDelegate.h */,
 				D06203031A07BD82001222A9 /* AppDelegate.m */,
 				D06203051A07BD82001222A9 /* ViewController.h */,
 				D06203061A07BD82001222A9 /* ViewController.m */,
+				D06203401A08ED37001222A9 /* RTCustomPageViewController.h */,
+				D06203411A08ED37001222A9 /* RTCustomPageViewController.m */,
 				D06203081A07BD82001222A9 /* Main.storyboard */,
+				D062032B1A07BEB6001222A9 /* Walkthrough.storyboard */,
 				D062030B1A07BD82001222A9 /* Images.xcassets */,
 				D062030D1A07BD82001222A9 /* LaunchScreen.xib */,
 				D06202FE1A07BD82001222A9 /* Supporting Files */,
@@ -102,21 +111,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D06203171A07BD82001222A9 /* WalkthroughTests */ = {
+		D06203241A07BDCD001222A9 /* RTWalkthrough */ = {
 			isa = PBXGroup;
 			children = (
-				D062031A1A07BD82001222A9 /* WalkthroughTests.m */,
-				D06203181A07BD82001222A9 /* Supporting Files */,
+				D06203251A07BDF8001222A9 /* RTWalkthroughViewController.h */,
+				D06203261A07BDF8001222A9 /* RTWalkthroughViewController.m */,
+				D06203281A07BE27001222A9 /* RTWalkthroughPageViewController.h */,
+				D06203291A07BE27001222A9 /* RTWalkthroughPageViewController.m */,
 			);
-			path = WalkthroughTests;
+			path = RTWalkthrough;
 			sourceTree = "<group>";
 		};
-		D06203181A07BD82001222A9 /* Supporting Files */ = {
+		D062032E1A07BEC4001222A9 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				D06203191A07BD82001222A9 /* Info.plist */,
+				D062032F1A07BEE2001222A9 /* bg@2x.jpg */,
+				D06203301A07BEE2001222A9 /* img3@2x.png */,
+				D06203311A07BEE2001222A9 /* iPhone@2x.png */,
+				D06203321A07BEE2001222A9 /* leftarrow@2x.png */,
+				D06203331A07BEE2001222A9 /* rightarrow@2x.png */,
+				D06203341A07BEE2001222A9 /* tiles */,
 			);
-			name = "Supporting Files";
+			name = assets;
+			sourceTree = "<group>";
+		};
+		D06203341A07BEE2001222A9 /* tiles */ = {
+			isa = PBXGroup;
+			children = (
+				D06203351A07BEE2001222A9 /* cloud1@2x.png */,
+				D06203361A07BEE2001222A9 /* cloud3@2x.png */,
+				D06203371A07BEE2001222A9 /* iPhoneScreen@2x.png */,
+			);
+			path = tiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,39 +165,18 @@
 			productReference = D06202FB1A07BD82001222A9 /* Walkthrough.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D06203131A07BD82001222A9 /* WalkthroughTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D06203211A07BD82001222A9 /* Build configuration list for PBXNativeTarget "WalkthroughTests" */;
-			buildPhases = (
-				D06203101A07BD82001222A9 /* Sources */,
-				D06203111A07BD82001222A9 /* Frameworks */,
-				D06203121A07BD82001222A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D06203161A07BD82001222A9 /* PBXTargetDependency */,
-			);
-			name = WalkthroughTests;
-			productName = WalkthroughTests;
-			productReference = D06203141A07BD82001222A9 /* WalkthroughTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D06202F31A07BD82001222A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RT;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Radiant Tap";
 				TargetAttributes = {
 					D06202FA1A07BD82001222A9 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					D06203131A07BD82001222A9 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = D06202FA1A07BD82001222A9;
 					};
 				};
 			};
@@ -189,7 +194,6 @@
 			projectRoot = "";
 			targets = (
 				D06202FA1A07BD82001222A9 /* Walkthrough */,
-				D06203131A07BD82001222A9 /* WalkthroughTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,15 +204,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D062030A1A07BD82001222A9 /* Main.storyboard in Resources */,
+				D062032D1A07BEB6001222A9 /* Walkthrough.storyboard in Resources */,
+				D06203391A07BEE2001222A9 /* img3@2x.png in Resources */,
+				D062033B1A07BEE2001222A9 /* leftarrow@2x.png in Resources */,
 				D062030F1A07BD82001222A9 /* LaunchScreen.xib in Resources */,
 				D062030C1A07BD82001222A9 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D06203121A07BD82001222A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D062033D1A07BEE2001222A9 /* cloud1@2x.png in Resources */,
+				D062033F1A07BEE2001222A9 /* iPhoneScreen@2x.png in Resources */,
+				D062033A1A07BEE2001222A9 /* iPhone@2x.png in Resources */,
+				D06203381A07BEE2001222A9 /* bg@2x.jpg in Resources */,
+				D062033C1A07BEE2001222A9 /* rightarrow@2x.png in Resources */,
+				D062033E1A07BEE2001222A9 /* cloud3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,29 +225,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06203421A08ED37001222A9 /* RTCustomPageViewController.m in Sources */,
 				D06203071A07BD82001222A9 /* ViewController.m in Sources */,
+				D062032A1A07BE27001222A9 /* RTWalkthroughPageViewController.m in Sources */,
+				D06203271A07BDF8001222A9 /* RTWalkthroughViewController.m in Sources */,
 				D06203041A07BD82001222A9 /* AppDelegate.m in Sources */,
 				D06203011A07BD82001222A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D06203101A07BD82001222A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D062031B1A07BD82001222A9 /* WalkthroughTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D06203161A07BD82001222A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D06202FA1A07BD82001222A9 /* Walkthrough */;
-			targetProxy = D06203151A07BD82001222A9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D06203081A07BD82001222A9 /* Main.storyboard */ = {
@@ -258,6 +251,14 @@
 				D062030E1A07BD82001222A9 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D062032B1A07BEB6001222A9 /* Walkthrough.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D062032C1A07BEB6001222A9 /* Base */,
+			);
+			name = Walkthrough.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,40 +362,6 @@
 			};
 			name = Release;
 		};
-		D06203221A07BD82001222A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WalkthroughTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walkthrough.app/Walkthrough";
-			};
-			name = Debug;
-		};
-		D06203231A07BD82001222A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WalkthroughTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walkthrough.app/Walkthrough";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,14 +381,7 @@
 				D06203201A07BD82001222A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D06203211A07BD82001222A9 /* Build configuration list for PBXNativeTarget "WalkthroughTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D06203221A07BD82001222A9 /* Debug */,
-				D06203231A07BD82001222A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
