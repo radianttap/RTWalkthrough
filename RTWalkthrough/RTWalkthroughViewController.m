@@ -84,7 +84,8 @@
 		
 		CGRect frame = self.scrollview.frame;
 		frame.origin.x = (CGFloat)(self.currentPage + 1) * frame.size.width;
-		[self.scrollview scrollRectToVisible:frame animated:YES];
+//		[self.scrollview scrollRectToVisible:frame animated:YES];
+		[self.scrollview setContentOffset:frame.origin animated:YES];
 	}
 }
 
@@ -98,6 +99,7 @@
 		CGRect frame = self.scrollview.frame;
 		frame.origin.x = (CGFloat)(self.currentPage - 1) * frame.size.width;
 		[self.scrollview scrollRectToVisible:frame animated:YES];
+		[self.scrollview setContentOffset:frame.origin animated:YES];
 	}
 }
 
