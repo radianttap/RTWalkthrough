@@ -14,9 +14,16 @@
 
 @property (nonatomic, strong) NSMutableArray *subsWeights;
 
+@property (nonatomic, strong) IBOutletCollection(UIView) NSArray *animatedSubviews;
+
 @end
 
 @implementation RTWalkthroughPageViewController
+
+- (BOOL)shouldAutorotate {
+	
+	return NO;
+}
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	
@@ -37,7 +44,7 @@
 	self.view.layer.masksToBounds = YES;
 	self.subsWeights = [NSMutableArray array];
 	
-	for (UIView *v in self.view.subviews) {
+	for (UIView *v in self.animatedSubviews) {
 		CGPoint speed = self.speed;
 		speed.x += self.speedVariance.x;
 		speed.y += self.speedVariance.y;
@@ -76,7 +83,7 @@
 // MARK: Animations (WIP)
 
 - (void)animationAlpha:(NSInteger)index offset:(CGFloat)offset {
-	UIView *cView = self.view.subviews[index];
+	UIView *cView = self.animatedSubviews[index];
 	
 	if (offset > 1.0){
 		offset = 1.0 + (1.0 - offset);
@@ -89,7 +96,7 @@
 	CGFloat x = (1.0 - offset) * 10;
 	CGPoint p = [self.subsWeights[index] CGPointValue];
 	transform = CATransform3DTranslate(transform, (pow(x,3) - (x * 25)) * p.x, (pow(x,3) - (x * 20)) * p.y, 0 );
-	((UIView *)self.view.subviews[index]).layer.transform = transform;
+	((UIView *)self.animatedSubviews[index]).layer.transform = transform;
 }
 
 - (void)animationZoom:(NSInteger)index offset:(CGFloat)offset {
@@ -101,7 +108,7 @@
 	}
 	CGFloat scale = (1.0 - tmpOffset);
 	transform = CATransform3DScale(transform, 1 - scale , 1 - scale, 1.0);
-	((UIView *)self.view.subviews[index]).layer.transform = transform;
+	((UIView *)self.animatedSubviews[index]).layer.transform = transform;
 }
 
 - (void)animationLinear:(NSInteger)index offset:(CGFloat)offset {
@@ -109,7 +116,7 @@
 	CGFloat mx = (1.0 - offset) * 100;
 	CGPoint p = [self.subsWeights[index] CGPointValue];
 	transform = CATransform3DTranslate(transform, mx * p.x, mx * p.y, 0 );
-	((UIView *)self.view.subviews[index]).layer.transform = transform;
+	((UIView *)self.animatedSubviews[index]).layer.transform = transform;
 }
 
 - (void)animationInOut:(NSInteger)index offset:(CGFloat)offset {
@@ -122,7 +129,7 @@
 	}
 	CGPoint p = [self.subsWeights[index] CGPointValue];
 	transform = CATransform3DTranslate(transform, (1.0 - tmpOffset) * p.x * 100, (1.0 - tmpOffset) * p.y * 100, 0);
-	((UIView *)self.view.subviews[index]).layer.transform = transform;
+	((UIView *)self.animatedSubviews[index]).layer.transform = transform;
 }
 
 @end

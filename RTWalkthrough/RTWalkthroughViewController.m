@@ -7,8 +7,9 @@
 //
 
 #import "RTWalkthroughViewController.h"
+#import "RTWalkthroughPageViewController.h"
 
-@interface RTWalkthroughViewController () < UIScrollViewDelegate >
+@interface RTWalkthroughViewController () < UIScrollViewDelegate, RTWalkthroughPageViewControllerDelegate >
 
 @property (nonatomic, strong) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, strong) IBOutlet UIButton *nextButton;
@@ -24,6 +25,10 @@
 
 @implementation RTWalkthroughViewController
 
+- (BOOL)shouldAutorotate {
+	
+	return NO;
+}
 
 - (NSInteger)currentPage {
 	
@@ -84,7 +89,6 @@
 		
 		CGRect frame = self.scrollview.frame;
 		frame.origin.x = (CGFloat)(self.currentPage + 1) * frame.size.width;
-//		[self.scrollview scrollRectToVisible:frame animated:YES];
 		[self.scrollview setContentOffset:frame.origin animated:YES];
 	}
 }
@@ -109,9 +113,17 @@
 		[self.delegate walkthroughControllerDidClose:self];
 }
 
-- (void)addViewController:(UIViewController *)vc {
+- (void)walkthroughPageRequestsClosing:(RTWalkthroughPageViewController *)controller {
+	
+	[self close:nil];
+}
+
+- (void)addViewController:(RTWalkthroughPageViewController *)vc {
 	
 	[self.controllers addObject:vc];
+	
+	if ([vc respondsToSelector:@selector(setDelegate:)])
+		vc.delegate = self;
 	
 	// Setup the viewController view
 	

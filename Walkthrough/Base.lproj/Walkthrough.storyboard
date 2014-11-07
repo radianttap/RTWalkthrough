@@ -31,7 +31,7 @@
                                     <action selector="close:" destination="txJ-gV-nlq" eventType="touchUpInside" id="lTD-i1-A4i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ad-hv-8C6" userLabel="Prev">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ad-hv-8C6" userLabel="Prev">
                                 <rect key="frame" x="0.0" y="530" width="50" height="50"/>
                                 <state key="normal" image="leftarrow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,6 +152,18 @@
                             <point key="value" x="1" y="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="animatedSubviews" destination="hge-Ts-lfN" id="qVA-oa-mJd"/>
+                        <outletCollection property="animatedSubviews" destination="AaH-7K-LjG" id="AKZ-c9-WoH"/>
+                        <outletCollection property="animatedSubviews" destination="Y7O-qQ-89H" id="cBu-T6-jCQ"/>
+                        <outletCollection property="animatedSubviews" destination="BMw-7K-w6n" id="wZj-vt-504"/>
+                        <outletCollection property="animatedSubviews" destination="GbU-Cm-iqi" id="eNX-Yw-ohS"/>
+                        <outletCollection property="animatedSubviews" destination="pga-ab-lFe" id="Kl7-DK-NQP"/>
+                        <outletCollection property="animatedSubviews" destination="p5b-aG-RYB" id="fpT-db-hp4"/>
+                        <outletCollection property="animatedSubviews" destination="LS3-Hk-k2a" id="YD2-Mp-GA0"/>
+                        <outletCollection property="animatedSubviews" destination="bYk-4H-Yso" id="NiG-va-V1y"/>
+                        <outletCollection property="animatedSubviews" destination="I6W-Dm-KJ9" id="Nro-uy-abQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6r-P2-d5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,6 +226,11 @@
                             <constraint firstAttribute="centerX" secondItem="bM9-g6-tPB" secondAttribute="centerX" constant="0.5" id="u1B-iQ-Joa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="animatedSubviews" destination="dfl-3s-oOE" id="JbU-qS-5rf"/>
+                        <outletCollection property="animatedSubviews" destination="HjC-th-GUy" id="h7y-U1-9uZ"/>
+                        <outletCollection property="animatedSubviews" destination="bM9-g6-tPB" id="zAF-fn-Sbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3l-I0-u1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,6 +338,10 @@
                             <integer key="value" value="3"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="animatedSubviews" destination="Kvx-AJ-PkH" id="xAT-m4-KEN"/>
+                        <outletCollection property="animatedSubviews" destination="QgZ-gl-DLV" id="N2p-u3-I2n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2t-6N-Fal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
