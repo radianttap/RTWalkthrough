@@ -158,7 +158,7 @@
 			[self.scrollview removeConstraints:self.lastViewConstraint];
 		}
 		
-		self.lastViewConstraint = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[view]-|" options:0 metrics:nil views:@{@"view":vc.view}];
+		self.lastViewConstraint = [NSLayoutConstraint constraintsWithVisualFormat:@"H:[view]-0-|" options:0 metrics:nil views:@{@"view":vc.view}];
 		[self.scrollview addConstraints:self.lastViewConstraint];
 	}
 }
